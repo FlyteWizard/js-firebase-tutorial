@@ -65,3 +65,10 @@ debug.log
 # ENV
 .env
 !.env.example
+
+# Firebase Config
+.firebase/
+.firebaserc
+firebase.json
+firestore.indexes.json
+firestore.rules
