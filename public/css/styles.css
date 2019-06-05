@@ -1,0 +1,14 @@
+/* Main */
+main {
+  padding: 2em 0;
+}
+
+/* Card */
+.col-sm-6 {
+  padding-top: 1rem;
+}
+
+/* Signup */ 
+.changeToSignin {
+  display: none;
+}

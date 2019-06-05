@@ -1,0 +1,113 @@
+<!doctype html>
+<!-- English HTML Document -->
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#9D2362">
+
+    <!-- PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="apple-mobile-web-app-title" content="JS Firebase Tutorial">
+
+    <!-- Title -->
+    <title>JS Firebase Tutorial</title>
+    <!-- Description -->
+    <meta name="description" content="A JS and Firebase Tutorial">
+    <!-- Author -->
+    <meta name="author" content="FlyteWizard">
+    <!-- Keywords -->
+    <meta name="keywords" content="Tutorial, Firebase, JS">
+
+    <!--Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Custom -->
+  </head>
+  <body onload="getAllCourses()">
+    <!-- Header -->
+    <header>
+      <!-- Navigation -->
+      <nav class="navbar navbar-light bg-light justify-content-between">
+        <div class="container">
+          <!-- Text -->
+          <a class="navbar-brand">WOOT!</a> <!-- This is also very serious -->
+          <!-- Signout Button -->
+          <button class="btn btn-outline-info " onclick="signout()">Signout</button>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Content Here -->
+    <main class="container">
+      <!-- Signup Section -->
+      <section class="row">
+        <div class="col-12">
+          <!-- Text -->
+          <h1>This Amazing App!</h1>
+          <p>
+            Find all the UVic Courses <a target="_blank" href="https://web.uvic.ca/calendar2019-09/courses/">here</a>
+          </p>
+        </div>
+      </section>
+      <!-- Create An Entry -->
+      <section>
+        <!-- CourseName Field -->
+        <div class="form-group">
+          <label for="courseName">Course Name</label>
+          <input type="text" class="form-control" id="courseName" aria-describedby="courseName" placeholder="Course Name">
+        </div>
+        <!-- CourseNumber Field -->
+        <div class="form-group">
+          <label for="courseNumber">Course Number</label>
+          <input type="text" class="form-control" id="courseNumber" placeholder="Course Number">
+        </div>
+        <!-- CourseSumester Field -->
+        <div class="form-group">
+          <label for="courseSemester">Course Semester</label>
+          <select class="form-control" id="courseSemester">
+            <option>Fall</option>
+            <option>Spring</option>
+            <option>Summer</option>
+          </select>
+        </div>
+        <!-- AddCourse Button -->
+        <button class="btn btn-primary" id="course" onclick="addCourse()">Add Course</button>
+      </section>
+      <!-- Division -->
+      <section>
+        <hr>
+      </section>
+      <!-- Course List -->
+      <section id="coursesList" class="row">
+      </section>
+    </main>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script> <!-- Core Firebase SDK-->
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js"></script> <!-- Auth Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-firestore.js"></script> <!-- Firestore Firebase SDK -->
+    <script>
+      // Firebase Config
+      const firebaseConfig = {
+        apiKey: "api-key",
+        authDomain: "project-id.firebaseapp.com",
+        databaseURL: "https://project-id.firebaseio.com",
+        projectId: "project-id",
+        storageBucket: "project-id.appspot.com",
+        messagingSenderId: "sender-id",
+        appID: "app-id"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script> <!-- Initialize Config and Firebase -->
+
+    <!-- JS -->
+    <script src="js/courses.js"></script>
+    <!--<script src="js/courses-advance.js"></script>-->
+  </body>
+</html>

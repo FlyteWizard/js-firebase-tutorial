@@ -1,0 +1,116 @@
+<!doctype html>
+<!-- English HTML Document -->
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#9D2362">
+
+    <!-- PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="apple-mobile-web-app-title" content="JS Firebase Tutorial">
+
+    <!-- Title -->
+    <title>JS Firebase Tutorial</title>
+    <!-- Description -->
+    <meta name="description" content="A JS and Firebase Tutorial">
+    <!-- Author -->
+    <meta name="author" content="FlyteWizard">
+    <!-- Keywords -->
+    <meta name="keywords" content="Tutorial, Firebase, JS">
+
+    <!--Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Custom -->
+  </head>
+  <body>
+    <!-- Header-->
+    <header>
+      <!-- Navigation -->
+      <nav class="navbar navbar-light bg-light justify-content-between">
+        <div class="container">
+          <!-- Text -->
+          <a class="navbar-brand">WOOT!</a> <!-- This is very serious -->
+          <div>
+            <!-- Change to Signup Section - Default -->
+            <button class="btn btn-outline-info changeToSignup" onclick="changeToSignup()">Signup</button>
+            <!-- Change to Signin Section -->
+            <button class="btn btn-outline-info changeToSignin" onclick="changeToSignin()">Signin</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Content Here -->
+    <main class="container">
+      <!-- Signin Section - Default -->
+      <section class="row changeToSignup">
+        <!-- Text -->
+        <div class="col-12">
+          <h1>Signin to this amazing app!</h1>
+        </div>
+      </section>
+      <section class="changeToSignup">
+        <!-- Email Field -->
+        <div class="form-group">
+          <label for="signinEmail">Email address</label>
+          <input type="email" class="form-control signin" id="signinEmail" aria-describedby="emailHelp" placeholder="Email">
+        </div>
+        <!-- Password Field -->
+        <div class="form-group">
+          <label for="signinPassword">Password</label>
+          <input type="password" class="form-control signin" id="signinPassword" placeholder="Password">
+        </div>
+        <!-- Signin Button -->
+        <button class="btn btn-primary" id="signin" onclick="signin()">Signin</button>
+      </section>
+      <!-- Signup Section -->
+      <section class="row changeToSignin">
+        <!-- Text -->
+        <div class="col-12">
+          <h1>Signup for this amazing app!</h1>
+        </div>
+      </section>
+      <section class="changeToSignin">
+        <!-- Email Field -->
+        <div class="form-group">
+          <label for="signupEmail">Email address</label>
+          <input type="email" class="form-control signup" id="signupEmail" aria-describedby="emailHelp" placeholder="Email">
+        </div>
+        <!-- Password Field -->
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" class="form-control signup" id="signupPassword" placeholder="Password">
+        </div>
+        <!-- Signup Button -->
+        <button class="btn btn-primary" id="signup" onclick="signup()">Signup</button>
+      </section>
+    </main>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script> <!-- Core Firebase SDK-->
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js"></script> <!-- Auth Firebase SDK -->
+    <script>
+      // Firebase Config
+      const firebaseConfig = {
+        apiKey: "api-key",
+        authDomain: "project-id.firebaseapp.com",
+        databaseURL: "https://project-id.firebaseio.com",
+        projectId: "project-id",
+        storageBucket: "project-id.appspot.com",
+        messagingSenderId: "sender-id",
+        appID: "app-id"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script> <!-- Initialize Config and Firebase -->
+
+    <!-- JS -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
