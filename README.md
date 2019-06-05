@@ -144,16 +144,30 @@ service cloud.firestore {
 
 npm install -g firebase-tools
 
-#. Deploy Application
+#. Deploy Application - https://firebase.google.com/docs/hosting/quickstart?authuser=0#initialize
 
 firebase login
 
 firebase init
 
+- Firestore
+- Hosting
+
+- Select Project
+
+- Default (firestore.rules)
+  
+- Default (firestore.indexes.json)
+
+- Default (public)
+
+- No (Single Page App)
+
+- No (Overwrite)
+
 firebase deploy
 
 #. Visit https://js-firebase-tutorial-77077.web.app/
-
 
 What did I use?
 
@@ -168,7 +182,6 @@ Docs
 * Auth - https://firebase.google.com/docs/firestore/security/get-started
 * Firestore Data - https://firebase.google.com/docs/firestore/manage-data/structure-data
 * Get Started - https://firebase.google.com/docs/web/setup
-
 
 Further Reading
 
