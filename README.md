@@ -45,7 +45,7 @@ By the end of the tutorial you should be able to...
 * Use Firebase as a database.
 * Use Firebase CLI to deploy your application.
 * Recreate the base application locally.
-* Recreate to deploy the base application to Firebase Hosting.
+* Be able to deploy the base application to Firebase Hosting.
 * Understand the process of creating a JS and Firebase Application. 
 
 ## Getting started
@@ -63,7 +63,7 @@ cd working/directory
 3. Clone the demo repository
 
 ```bash
-git clone 
+git clone https://github.com/FlyteWizard/js-firebase-tutorial.git
 ```
 
 4. Change into the cloned demo repository
@@ -232,7 +232,7 @@ Now that Firebase is Setup and Integrated into our application we can move forwa
 
 You will see certain parts commented out, we will uncomment these sections in order to get our application to work.
 
-There are certain parts labelled `Advanced`, these sections of code are reserved for the bonus section of this tutorial. If we are able to get through all the basic examples, we can progress to the more complex. Alternatively, these can be experiemented with after the tutorial. (N.B. I strongly encourage you look through the advance section once the tutorial is over). 
+There are certain parts labelled `Advance`, these sections of code are reserved for the bonus section of this tutorial. If we are able to get through all the basic examples, we can progress to the more complex. Alternatively, these can be experiemented with after the tutorial. (N.B. I strongly encourage you look through the advance section once the tutorial is over). 
 
 ## Deployment
 
@@ -312,7 +312,7 @@ firebase deploy
 
 6. Visit your Application - [Reference Docs](https://firebase.google.com/docs/hosting/quickstart?authuser=0#deploy)
 
-Your application will be available to either `projectID.web.app`
+Your application will be available at either `projectID.web.app`
 or `projectID.firebaseapp.com`
 
 ## What did I use?
