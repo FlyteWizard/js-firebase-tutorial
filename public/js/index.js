@@ -6,19 +6,20 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
   }
 });
 
-// Signup - https://firebase.google.com/docs/auth/web/password-auth#create_a_password-based_account
-function signup() {
-  // Grab data from the signup inputs
-  let email = document.getElementById('signupEmail').value;
-  let password = document.getElementById('signupPassword').value;
+// Uncomment (cmd + k & cmd + u)
+// // Signup - https://firebase.google.com/docs/auth/web/password-auth#create_a_password-based_account
+// function signup() {
+//   // Grab data from the signup inputs
+//   let email = document.getElementById('signupEmail').value;
+//   let password = document.getElementById('signupPassword').value;
 
-  // Create User -> If Error Alert
-  firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
-    let errorCode = error.code;
-    let errorMessage = error.message;
-    alert(errorCode + ": " + errorMessage);
-  });
-}
+//   // Create User -> If Error Alert
+//   firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
+//     let errorCode = error.code;
+//     let errorMessage = error.message;
+//     alert(errorCode + ": " + errorMessage);
+//   });
+// }
 
 // Allows for button to be keyboard accessible
 for (let cell of document.querySelectorAll(".signup")) {
@@ -29,19 +30,20 @@ for (let cell of document.querySelectorAll(".signup")) {
   })
 };
 
+// Uncomment (cmd + k & cmd + u)
 // Signin - https://firebase.google.com/docs/auth/web/password-auth#sign_in_a_user_with_an_email_address_and_password
-function signin() {
-  // Grab data from the signin inputs
-  let email = document.getElementById('signinEmail').value;
-  let password = document.getElementById('signinPassword').value;
+// function signin() {
+//   // Grab data from the signin inputs
+//   let email = document.getElementById('signinEmail').value;
+//   let password = document.getElementById('signinPassword').value;
 
-  // Signin User -> If Error Alert
-  firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
-    let errorCode = error.code;
-    let errorMessage = error.message;
-    alert(errorCode + ": " + errorMessage);
-  });
-}
+//   // Signin User -> If Error Alert
+//   firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
+//     let errorCode = error.code;
+//     let errorMessage = error.message;
+//     alert(errorCode + ": " + errorMessage);
+//   });
+// }
 
 // Allows for button to be keyboard accessible
 for (let cell of document.querySelectorAll(".signin")) {
