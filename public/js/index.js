@@ -31,7 +31,7 @@ for (let cell of document.querySelectorAll(".signup")) {
 };
 
 // Uncomment (cmd + k & cmd + u)
-// Signin - https://firebase.google.com/docs/auth/web/password-auth#sign_in_a_user_with_an_email_address_and_password
+// // Signin - https://firebase.google.com/docs/auth/web/password-auth#sign_in_a_user_with_an_email_address_and_password
 // function signin() {
 //   // Grab data from the signin inputs
 //   let email = document.getElementById('signinEmail').value;
