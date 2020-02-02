@@ -1,4 +1,4 @@
-# JS and Firebase Tutorial
+# JS and Firebase Tutorial :raising_hand:
 
 The tutorial will cover how to create an application with JS and Firebase. We will be using vanilla JavaScript and Google Firebase (Firestore, Hosting).  
 
@@ -8,27 +8,27 @@ Here is the [live demo](https://js-firebase-tutorial-77077.web.app/) feel free t
 
 ![](./public/img/promo.png)
 
-## Requirements
+## Requirements :full_moon_with_face:
 
 These are the requirements you will need to be able to complete the tutorial. 
 
-#### Hardware
+#### Hardware :volcano:
 
 * Computer (Admin Access) and Charger
 * Pen and Paper (Optional)
 
-#### Accounts
+#### Accounts :milky_way:
 
 * GitHub Account
 * Google Account (Firebase Access)
 
-#### Software
+#### Software :lizard:
 
 * Terminal
 * Text Editor (VSCode, Atom, Sublime)
 * Browser (Chrome, Firefox, Safari)
 
-#### Tools
+#### Tools :pill:
 
 Please have `Git` and `Node.js`/`npm` installed before the tutorial. 
 
@@ -38,7 +38,7 @@ Feel free to install the `Firebase CLI` but we will go over this step in the tut
 * [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/get-npm)
 * [Firebase CLI](https://firebase.google.com/docs/cli) - `npm install -g firebase-tools`
 
-## Learning Outcomes
+## Learning Outcomes :pencil2:
 
 By the end of the tutorial you should be able to...
 
@@ -48,9 +48,9 @@ By the end of the tutorial you should be able to...
 * Be able to deploy the base application to Firebase Hosting.
 * Understand the process of creating a JS and Firebase Application. 
 
-## Getting started
+## Getting started :scroll:
 
-### Obtain a Local Copy 
+### Obtain a Local Copy :gem:
 
 1. Open the terminal
 
@@ -91,7 +91,7 @@ code .
 // Or by opening the project folder within your text editor
 ```
 
-## Firebase Setup
+## Firebase Setup :art:
 
 Here are the docs I reference throughout the tutorial: [https://firebase.google.com/docs/web/setup](https://firebase.google.com/docs/web/setup)
 
@@ -226,7 +226,7 @@ This script appears after the SDK scripts
 	- Select Save
 ```
 
-## Tutorial - Hands On
+## Tutorial - Hands On :crown:
 
 Now that Firebase is Setup and Integrated into our application we can move forward with creating our application. 
 
@@ -234,7 +234,7 @@ You will see certain parts commented out, we will uncomment these sections in or
 
 There are certain parts labelled `Advance`, these sections of code are reserved for the bonus section of this tutorial. If we are able to get through all the basic examples, we can progress to the more complex. Alternatively, these can be experiemented with after the tutorial. (N.B. I strongly encourage you look through the advance section once the tutorial is over). 
 
-## Deployment
+## Deployment :rice_cracker:
 
 1. Secure Firestore Database - [Reference Docs](https://firebase.google.com/docs/firestore/security/overview?authuser=0)
 
@@ -315,21 +315,21 @@ firebase deploy
 Your application will be available at either `projectID.web.app`
 or `projectID.firebaseapp.com`
 
-## What did I use?
+## What did I use? :ice_cream:
 
 * Firebase - [https://firebase.google.com/](https://firebase.google.com/)
 * GitHub - [https://github.com/](https://github.com/)
 * Bootstrap 4 - [https://getbootstrap.com/](https://getbootstrap.com/)
 * Vanilla JS - [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-## Reference Docs
+## Reference Docs :gear:
 
 * Bootstrap - [https://getbootstrap.com/docs/4.3/getting-started/introduction/](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 * Firebase Get Started - [https://firebase.google.com/docs/web/setup](https://firebase.google.com/docs/web/setup)
 * Firebase Auth - [https://firebase.google.com/docs/firestore/security/get-started](https://firebase.google.com/docs/firestore/security/get-started)
 * Firebase Firestore Data - [https://firebase.google.com/docs/firestore/manage-data/structure-data](https://firebase.google.com/docs/firestore/manage-data/structure-data)
 
-## Further Reading
+## Further Reading :factory:
 
 * https://www.codementor.io/cultofmetatron/when-you-should-and-shouldn-t-use-firebase-f62bo3gxv
 * https://pamartinezandres.com/lessons-learnt-the-hard-way-using-firebase-realtime-database-c609b52b9afb
