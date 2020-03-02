@@ -45,7 +45,7 @@ By the end of the tutorial you should be able to...
 * Use Firebase as a database.
 * Use Firebase CLI to deploy your application.
 * Recreate the base application locally.
-* Be able to deploy the base application to Firebase Hosting.
+* Deploy the base application to Firebase Hosting.
 * Understand the process of creating a JS and Firebase Application. 
 
 ## Getting started :scroll:
