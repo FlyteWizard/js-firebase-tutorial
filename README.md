@@ -95,7 +95,7 @@ code .
 
 Here are the docs I reference throughout the tutorial: [https://firebase.google.com/docs/web/setup](https://firebase.google.com/docs/web/setup)
 
-1. Signin into Firebase - [https://firebase.google.com/](https://firebase.google.com/)
+1. Signin to Firebase - [https://firebase.google.com/](https://firebase.google.com/)
 
 2. Go to Console - [https://console.firebase.google.com/](https://console.firebase.google.com/)
 
