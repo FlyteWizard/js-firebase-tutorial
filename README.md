@@ -78,8 +78,8 @@ cd js-firebase-tutorial
 // From the terminal
 open public/index.html
 
-// Or by double clicking the public/index.html file in the Finder
-// Or by dragging and dropping the public/index.html file into a broswer
+// Or by double clicking the public/index.html file in Finder
+// Or by dragging and dropping the public/index.html file into a browser
 ```
 
 6. Open the demo project in your text editor
